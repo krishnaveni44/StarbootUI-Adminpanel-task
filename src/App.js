@@ -4,7 +4,7 @@ import "./App.css";
 import "./css/fontawesome-free/css/all.min.css";
 import { Cards } from "./Cards";
 import { FirstRow } from "./FirstRow";
-import { Charts } from "./Charts";
+import  Charts  from "./Charts";
 import { UtilitiesAnimation } from "./UtilitiesAnimation";
 import { UtilitiesBorders } from "./UtilitiesBorders";
 import { UtilitiesColors } from "./UtilitiesColors";
@@ -64,11 +64,13 @@ export default function App() {
         <Blank />
 </Route>
   </Route>
-   <Route path="/charts" exact>
+
+    <Route path="/charts" component={Dashboard} exact>
          <UserProvider>
            <Charts />
          </UserProvider>
    </Route>
+
    <Route path="/tables" exact>
          <UserProvider>
            <Tables />
